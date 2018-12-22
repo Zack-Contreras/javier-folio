@@ -9,11 +9,11 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header style={{color:'orange;'}} className='header-color' title="Javier.Contreras" scroll>
+        <Header style={{color:''}} className='header-color' title="bcp.javier.contreras" scroll>
             <Navigation>
-                <Link style={{color:'orange', opacity: '.7'}} to="/">Home</Link>
-                <Link style={{color:'orange', opacity: '.7'}} to="/aboutme">About Me</Link>
-                <Link style={{color:'orange', opacity: '.7'}} to="/projects">Portfolio</Link>
+                <Link style={{color:'#BA8B02', opacity: '.7'}} to="/">Home</Link>
+                <Link style={{color:'#BA8B02', opacity: '.7'}} to="/aboutme">About Me</Link>
+                <Link style={{color:'#BA8B02', opacity: '.7'}} to="/projects">portfolio</Link>
             </Navigation>
         </Header>
         <Drawer title="Menu">

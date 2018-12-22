@@ -18,10 +18,10 @@ class LandingPage extends Component {
               <p>Photoshop | Flyers | Photography | Weddings</p>
               <div className='social-links'>
                 <a href='https://www.facebook.com/javiermesser' rel="noopener noreferrer" target='_blank'>
-                  <i class="fab fa-facebook-square"></i>
+                  <i className="fab fa-facebook-square"></i>
                 </a>
                 <a href='http://www.google.com' rel="noopener noreferrer" target='_blank'>
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
               </div>
             </div>

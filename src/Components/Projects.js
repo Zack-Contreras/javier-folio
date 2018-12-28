@@ -25,7 +25,7 @@ toggleCategories(){
 
         <Card shadow={0} style={{minWidth: '20%', height: '450px', background: `url(${Flyer2})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
         <CardTitle expand />
-      
+
         </Card>
 
         <Card shadow={0} style={{minWidth: '20%', height: '450px', background: `url(${Flyer3})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
@@ -130,7 +130,7 @@ toggleCategories(){
     render() {
     return(
       <div className='category-tabs'>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+        <Tabs className='tabColor' activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Flyers</Tab>
           <Tab>Photography</Tab>
         </Tabs>

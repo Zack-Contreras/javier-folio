@@ -16,7 +16,7 @@ class App extends Component {
                 <Link style={{color:'#BA8B02', opacity: '.7'}} to="/projects">portfolio</Link>
             </Navigation>
         </Header>
-        <Drawer title="Menu">
+        <Drawer className='font' title="Menu">
             <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/aboutme">About Me</Link>

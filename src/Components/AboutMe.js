@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell, Chip, ChipContact } from 'react-mdl';
+import ContactForm from './ContactForm.js';
 
 class AboutMe extends Component {
   state = {
@@ -12,30 +13,35 @@ class AboutMe extends Component {
       showContactForm:  !this.state.showContactForm
     });
   }
-
+/*
   showForm = () => {
+      let someClass='';
     if (this.state.showContactForm) {
       return (
-        <div className='contactInfo'>
-          <p>Contact me through one of these options</p>
-          <p>Phone: 214-222-2222</p>
-          <p>Email: javier@javier.com</p>
-          <button onClick={this.toggleContactForm}>Back</button>
-        </div>
+        someClass = 'contactInfo open'
       );
     } else {
-      console.log('cool');
+      someClass = 'contactInfo'
     }
   }
+*/
 
 
   render() {
+
+    let objectcontact = 'contactInfo'
+    if (this.state.showContactForm) {
+      objectcontact = 'contactInfo open';
+    } else {
+      objectcontact = 'contactInfo';
+    }
 
 
     return(
       <div className='aboutContainer'>
 
-      {this.showForm()}
+
+      <ContactForm newClass={objectcontact} click={this.toggleContactForm} />
 
       <Grid className='aboutGrid'>
 
@@ -53,8 +59,8 @@ class AboutMe extends Component {
              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
              <button onClick={this.toggleContactForm}>
                <Chip>
-                <ChipContact className="mdl-color--teal mdl-color-text--white">J</ChipContact>
-                Contact Me
+                <ChipContact className="mdl-color--teal mdl-color-text--white"><span className='font'>J</span></ChipContact>
+                <span className='font'>Contact Me</span>
               </Chip>
             </button>
           </div>

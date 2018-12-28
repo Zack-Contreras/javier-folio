@@ -3,6 +3,18 @@
   font-family: 'Major Mono Display', monospace;
 }
 
+.font span {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.mdl-navigation__link {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.font {
+  font-family: 'Major Mono Display', monospace;
+}
+
 .header-color {
   background: #0F2027;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -82,6 +94,11 @@ height:100%;
   justify-content: space-between;
   padding:1rem;
   padding-top:1rem;
+
+}
+
+.tabColor {
+  opacity:.7;
 }
 
 .photo-container {
@@ -90,6 +107,8 @@ height:100%;
   justify-content: space-between;
   padding:1rem;
   padding-top:1rem;
+
+
 }
 
 .imageClass {
@@ -106,14 +125,15 @@ height:100%;
   margin:0;
   padding-top:70px;
   background: #BA8B02;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 text-align:center;
 
 
 }
 .aboutGrid {
-    height:90%;
+    height:97%;
     width:90%;
     background:rgba(0,0,0,0.4);
     border-radius:10px;
@@ -125,7 +145,7 @@ text-align:center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius:10px;
-  height:600px;
+  height:575px;
 }
 
 .aboutContent {
@@ -140,7 +160,7 @@ text-align:center;
 .aboutContent p {
   font-size:16px;
   font-weight: 400;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Major Mono Display', monospace;
 }
 
 .aboutContent h1 {
@@ -165,14 +185,78 @@ text-align:center;
   position:fixed;
   bottom:0;
   left:0;
-  height:90%;
+  height:100%;
+  width:100%;
+  padding-top:3rem;
+  background-color:white;
+  z-index:100;
+  transform:translateY(-100%);
+  transition: transform .3s ease-out;
+}
+.contactInfo.open {
+  transform:translateY(0);
+  position:fixed;
+  bottom:0;
+  left:0;
+  height:100%;
   width:100%;
   padding-top:3rem;
   background-color:white;
   z-index:100;
 }
+.contactGrid {
+  height:100%;
+  margin-top:300px;
+  padding-top:500px;
 
-@media (max-width:950px) {
+}
+.contact-section-a {
+  padding-top:6rem;
+  text-align:center;
+}
+.contact-section-a h1 {
+  font-family: 'Oxygen Mono', monospace;
+  font-weight: bold;
+}
+.contact-section-a img {
+  height:300px;
+}
+.contact-section-a button {
+  display:block;
+  width:100%;
+  margin:auto;
+  margin-top:2rem;
+
+}
+.iconContact {
+  font-size:300px;
+}
+
+.contact-section-b {
+  margin-top: 6rem;
+}
+
+.contact-section-b h2 {
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.contact-icons {
+  font-size:50px;
+  display:block;
+  margin-top:1.3rem;
+}
+.contactLabels {
+  font-size:20px;
+  padding-top:1rem;
+  margin-top:.8rem;
+}
+
+.labelAlt {
+  margin-top:2.1rem;
+}
+
+
+@media (max-width:1080px) {
   .banner-text h1 {
     font-size:25px;
     font-weight:bold;
@@ -188,4 +272,25 @@ text-align:center;
     color:white;
   }
 
+  .aboutContent p {
+    font-size:12px;
+  }
+
+  .aboutContent h1 {
+    font-size:12px;
+  }
+
+}
+
+
+@media (max-width:768px) {
+  .aboutBackground {
+    display:none;
+  }
+  .aboutContent h1 {
+    font-size:25px;
+  }
+  .contact-section-a {
+    display:none;
+  }
 }

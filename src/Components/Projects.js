@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Card, CardTitle, CardActions } from 'react-mdl';
-import Flyer from './flyer1.jpg';
-import Flyer2 from './TreesFlyer.jpg';
-import Flyer3 from './DTRFlyer.jpg';
+import { Tabs, Tab, Card, CardTitle } from 'react-mdl';
+import Flyer from '../images/flyer1.jpg';
+import Flyer2 from '../images/TreesFlyer.jpg';
+import Flyer3 from '../images/DTRFlyer.jpg';
+import CustomCard from './CustomCard.js'
+import Treepic from '../images/trees.jpg';
+import OldCar from '../images/old-car.jpg';
+import CatPic from '../images/cat-pic.jpg';
+import DerekPic from '../images/derek.jpg';
+import KennyPic from '../images/kenny-pic.jpg';
+import ConcertPic from '../images/concer-pic.jpg';
 
 class Projects extends Component {
   constructor(props) {
@@ -16,111 +23,50 @@ toggleCategories(){
       <div className='flyer-container'>
         <Card shadow={0} style={{minWidth: '20%', height: '450px', background: `url(${Flyer})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
         <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-            Flyer.jpg
-        </span>
-        </CardActions>
         </Card>
 
         <Card shadow={0} style={{minWidth: '20%', height: '450px', background: `url(${Flyer2})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
         <CardTitle expand />
-
         </Card>
 
         <Card shadow={0} style={{minWidth: '20%', height: '450px', background: `url(${Flyer3})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
         <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
         </Card>
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
+        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/49069726_102472804164265_616214991070035968_n.jpg?_nc_cat=109&_nc_ht=scontent-dfw5-1.xx&oh=f4b810b86f4c24fc019b0bbda466286a&oe=5C9A04FF) center / cover', marginTop: '1.5rem'}}>
         <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
         </Card>
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
+        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/49144944_102472827497596_3777719990791176192_n.jpg?_nc_cat=105&_nc_ht=scontent-dfw5-1.xx&oh=bfef5e42905f42d402b26d4e39f544bd&oe=5C8F28B7)', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', marginTop: '1.5rem'}}>
         <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
         </Card>
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
+        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/48926345_101058757639003_256882487894999040_n.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-1.xx&oh=c5fea84c9cff1be6163f38db71eb8af2&oe=5C9A3237) center / cover', marginTop: '1.5rem'}}>
         <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
         </Card>
       </div>
     )
   } else if (this.state.activeTab === 1) {
     return (
       <div className='photo-container'>
-        <Card shadow={0} style={{ minWidth: '20%', height: '400px', background: 'url(https://static1.squarespace.com/static/5a189cb0692ebeb0ea529a33/5a1b0a0e24a694106d9177e2/5a209e900852299886f0b902/1512265987470/Wedding_C%2BS_0536.JPG) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-            Flyer.jpg
-        </span>
-        </CardActions>
-        </Card>
+        <CustomCard
+        photo={Treepic} />
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Created for the band ...
-        </span>
-        </CardActions>
-        </Card>
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
-        </Card>
+        <CustomCard
+        photo={DerekPic} />
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
-        </Card>
+        <CustomCard
+        photo={OldCar} />
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
-        </Card>
+        <CustomCard
+        photo={CatPic} />
 
-        <Card shadow={0} style={{minWidth: '20%', height: '400px', background: 'url(http://www.getmdl.io/assets/demos/image_card.jpg) center / cover', marginTop: '1.5rem'}}>
-        <CardTitle expand />
-        <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-        <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-        Flyer.jpg
-        </span>
-        </CardActions>
-        </Card>
+        <CustomCard
+        photo={KennyPic} />
+
+        <CustomCard
+        photo={ConcertPic} />
       </div>
     )
   }

@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header style={{color:''}} className='header-color' title="bcp.javier.contreras" scroll>
+        <Header style={{color:''}} className='header-color' title="bcG.javier.contreras" scroll>
             <Navigation>
                 <Link style={{color:'#BA8B02', opacity: '.7'}} to="/">Home</Link>
                 <Link style={{color:'#BA8B02', opacity: '.7'}} to="/aboutme">About Me</Link>

@@ -8,7 +8,6 @@ const ContactForm = (props) => {
       <Grid className='contactGrid'>
         <Cell col={6}>
         <div className='contact-section-a'>
-          <h1>Contact Form</h1>
           <i className="fas fa-address-book iconContact"></i>
           <Button color="secondary" size="lg" onClick={props.click} block>Back</Button>
         </div>
@@ -24,8 +23,8 @@ const ContactForm = (props) => {
                 <i className="fas fa-phone-square contact-icons"></i>
               </Cell>
               <Cell col={7}>
-                <h2 className='contactLabels'>Email: javier@javier.com</h2>
-                <h2 className='contactLabels labelAlt'>Phone: 214-333-2321</h2>
+                <h2 className='contactLabels'>Email: birdcagegraphics@yahoo.com</h2>
+                <h2 className='contactLabels labelAlt'>Phone: (214)-742-0259</h2>
               </Cell>
             </Grid>
           </div>
